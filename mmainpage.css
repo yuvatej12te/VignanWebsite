@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.outbox{
+    border: solid 1px;
+    height: 120px;
+    display: flex;
+}
+#box1,#box2{
+    border: solid 1px;
+    height: 120px;
+}
+#box1{
+    width: 300px;
+}
+#box2{
+    width: 960px;
+    background-color: #933993;
+    text-align: center;
+}
+#clgname{
+    color: #ffffff;
+    font-size: 50px;
+    
+}
+#text1{
+    font-size: 22px;
+    color: #ffffff;
+}
+#scrolltext{
+    font-size: 20px;
+    font-weight: bold;
+}
+.navigation{
+    border: solid 1px;
+    height: 55px;
+}
+ul li{
+    border: solid 1px;
+    height: 55px;
+    float: left;
+    width: 126px;
+    text-align: center;
+    line-height: 55px;
+    background-color: #6494eda5 ;
+    position: relative;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border-radius: 5px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: #000080;
+    font-size: 22px;
+    text-decoration: none;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul li:hover>ul{
+    display: block;
+}
+ul li ul li{
+    width: 250px;
+    background-color: #dcdcdc;
+}
+ul li ul li ul li{
+    width: 350px;
+    margin-left: 253px;
+}
+ul ul ul{
+    top: 0px;
+}
+
+.arrow{
+    color: blueviolet;
+    font-size: 20px;
+}
+.obox{
+    border: solid 1px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 400px;
+}
+#in1{
+    width: 650px;
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 400px;
+    animation-name: imageschanging;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imageschanging{
+    10%{
+        background-image: url(img2.jpg);
+    }
+    20%{
+        background-image: url(img3.jpg);
+    }
+    30%{
+        background-image: url(img4.jpg);
+    }
+    40%{
+        background-image: url(img5.jpg);
+    }
+    50%{
+        background-image: url(img6.jpg);
+    }
+}
+
+#in2,#in3{
+    width: 270px;
+}
+.out{
+    border: solid 1px;
+    height: 170px;
+    background-color: black;
+}
+#logo{
+    padding-right: 120px;
+}
